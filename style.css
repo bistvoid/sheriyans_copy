@@ -1,0 +1,172 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Open Sans;
+}
+
+
+body{
+    min-height:100dvh;
+  background-color: #FCFCFC;
+  padding: 12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:0.3fr 3fr 1fr 1fr 1fr ;
+    grid-template-areas: 
+    "header header"
+    "left right"
+    "center center"
+    "accc accc"
+    "upfooter upfooter"
+    ;
+}
+header{
+    padding:0px 9px 0px 9px;
+    background-color: rgb(255, 253, 250);
+    grid-area: header;
+}
+header nav{
+
+    display: flex;
+    justify-content: space-between;
+}
+header nav .centernav{
+    display: flex;
+   align-items: center;
+  gap: 5%;
+
+
+
+}
+header nav .centernav h3{
+  font-weight: 200;
+
+
+white-space: nowrap;
+
+}
+header nav .leftbtn{
+    display: flex;
+    align-items: center;
+    /* width: 12%; */
+    gap: 16px;
+ justify-content: space-between;
+
+
+}
+header nav .leftbtn button{
+   padding: 12px;
+   border:none;
+background-color: black;
+color: white;
+
+   border-radius: 12px;
+   
+
+}
+
+.left{
+    padding: 30px;
+background-color: #FCFCFC;
+    grid-area: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 12px;
+}
+.left button{
+    background-color: white;
+    border: none;
+    padding: 15px;
+    border-radius:12px;
+    width: 30%;
+    text-align: start;
+}
+.left h1{
+    font-weight: 300;
+}
+.left_btn{
+    display: flex;
+    gap: 12px;
+
+}
+.left_btn button{
+    background-color: black;
+    color: white;
+    white-space: nowrap;
+    width: max-content;
+}
+.left_img{
+    display: grid;
+mix-blend-mode: multiply;
+    
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.left_img img{
+  width: 100%;
+  aspect-ratio: 10/1;
+        height: 45px;
+}
+.right{
+  
+    
+      background: url("https://rossettiart.com/cdn/shop/articles/japandi-style-the-practical-guide-with-line-art-abstract-pairings-that-always-work-6845861.jpg?v=1770767501&width=1400") ;
+
+
+    grid-area: right;
+    background-position: center ;
+background-repeat: no-repeat;
+background-size: cover;
+
+border-radius: 20px;
+      
+}
+
+.center{
+ 
+    grid-area: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    margin-top: 2%;
+    
+    gap: 3%;
+  
+}
+.center .box1{
+    height: 180px;
+    width: 300px;
+  
+    display: flex;
+    flex-direction: column;
+}
+.center .box1 img{
+   max-width: 100%;
+   height: 92%;
+   border-radius: 12px;
+   aspect-ratio: 1/1;
+  
+}
+.center .box1 div{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.center .box1 h2{
+    font-weight: 400;
+  font-size: 12px;
+}
+.center .box1 h3{
+        font-weight: 200;
+  font-size: 12px;
+}
+.accc{
+    background-color: plum;
+    grid-area: accc;
+}
+
+.upfooter{
+    background-color: khaki;
+    grid-area: upfooter;
+}
